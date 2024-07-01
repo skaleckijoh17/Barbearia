@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+  font-family: 'Monsterrat', san-serif;
+}
+
 header{
   background: #BBBBBB;
   padding: 20px 0;
@@ -168,6 +172,9 @@ td, th{
   text-align:center;
   font-size:2em;
   margin: 0 0 1em;
+  clear: left;
+  color:rgba(0, 0, 0, 0.4);
+  
 }
 
 .principal{
@@ -231,4 +238,65 @@ lista-beneficios{
 
 .imagem-beneficios{
   width:50%;
+  opacity:0.6;
+  transition:1s;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover{
+  opacity:1;
+}
+
+.titulo-principal:first-letter{
+  color:red;
+}
+
+p:first-line{
+  font-size: italic;
+
+}
+
+.titulo-principal:before{
+  content:"[";
+}
+
+.titulo-principal:before{
+  content:"]";
+}
+
+.item:before{
+  content:"★"
+}
+
+.item:first-child{
+  font-weight:bold;
+  
+}
+
+/*
+main > p {
+  background: red;
+}
+
+img + p {
+  background: purple;
+}
+
+img ~ p {
+  background: blue;
+}
+
+.principal p:not(#missao) {
+  background: orange;
+}
+*/
+
+@media screen and (max-width: 480px){
+.caixa, . principal, . benefícios, .mapa-conteudo, .video {
+width:auto;
+  
+}
+
+nav{
+  position:static;
 }
